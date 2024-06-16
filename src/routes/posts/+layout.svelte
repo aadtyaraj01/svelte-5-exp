@@ -80,7 +80,7 @@
     <button type="button" class:menuBtn={isOpenMenu} onclick={toggleMenu}>👉</button>
 
     <!-- toggle topics & toc buttons -->
-    {#if isOpenMenu && !isOpenOne}
+    {#if isOpenMenu && !(isOpenTopics || isOpenToc)}
         <!-- topics button -->
         <button type="button" onclick={toggleTopics}>📃</button>
         <!-- toc button -->
